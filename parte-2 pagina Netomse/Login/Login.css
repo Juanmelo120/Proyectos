@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", serif;
+    color: #ffffff;
+}
+#navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.nav-opc:hover{
+    animation: animacion 6s infinite;
+}
+nav{
+    padding-left: 850px;
+
+}
+@keyframes animacion{
+    0%{
+        color: rgba(230, 39, 245, 0.8);
+        text-shadow: #ffffff;
+    }
+    25%{
+        color: rgba(163, 10, 138, 0.8); 
+        text-shadow: #ffffff;
+    }
+    50%{
+        color: rgba(138, 8, 170, 0.8); 
+        text-shadow: #ffffff;
+    }
+    75%{
+        color: rgba(67, 7, 163, 0.8);
+        text-shadow: #ffffff;
+    }
+    100%, 0%{
+        color: rgba(230, 39, 245, 0.8);
+        text-shadow: 0px 0px 20px  #ffffff;
+    }
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+body{
+    background: black;
+    background-image: url(/PROYECTO_PAGINA_SUSCRIPCION/Imagenes/Captura\ de\ pantalla\ 2025-03-02\ 104037.png);
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    background-position: center;
+}
+#img-nav{
+    width: 80px;
+}
+fieldset{
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 80px;
+    border-radius: 15px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#titulo{
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+}
+footer{
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+p{
+    font-size: 17px;
+    font-weight: 400;
+}
+button{
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+#Registro{
+    background: blueviolet;
+    color: #ffffff;
+}
