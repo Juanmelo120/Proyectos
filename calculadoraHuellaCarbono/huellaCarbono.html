@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Huella de Carbono</title>
+    <link rel="stylesheet" type="text/css" href="huellaCarbono.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Huella de Carbono</h1>
+        <p>Hola, <span id="display-username"></span>. Completa los siguientes campos para calcular tu huella de carbono.</p>
+        
+        <div class="form-group">
+            <label for="transport">Transporte (km recorridos en auto por semana):</label>
+            <input type="range" id="transport" min="0" max="500" value="100" step="10">
+            <div class="slider-container">
+                <span>0 km</span>
+                <span class="slider-value" id="transport-value">100 km</span>
+                <span>500 km</span>
+            </div>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="energy">Consumo de energía (kWh por mes):</label>
+            <input type="range" id="energy" min="0" max="1000" value="300" step="10">
+            <div class="slider-container">
+                <span>0 kWh</span>
+                <span class="slider-value" id="energy-value">300 kWh</span>
+                <span>1000 kWh</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="food">Consumo de carne (veces por semana):</label>
+            <input type="range" id="food" min="0" max="21" value="7" step="1">
+            <div class="slider-container">
+                <span>0 veces</span>
+                <span class="slider-value" id="food-value">7 veces</span>
+                <span>21 veces</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="car-usage">¿Cuántos kilómetros recorres en auto por semana?</label>
+            <input type="range" id="car-usage" min="0" max="1000" value="150" step="10">
+            <div class="slider-container">
+                <span>0 km</span>
+                <span class="slider-value" id="car-usage-value">150 km</span>
+                <span>1000 km</span>
+            </div>
+        </div>
+                
+        <div class="form-group">
+            <label for="car-efficiency">Eficiencia de tu vehículo (litros cada 100 km):</label>
+            <input type="range" id="car-efficiency" min="3" max="20" value="8" step="0.5">
+            <div class="slider-container">
+                <span>3 L/100km</span>
+                <span class="slider-value" id="car-efficiency-value">8 L/100km</span>
+                <span>20 L/100km</span>
+            </div>
+        </div>
+                
+        <div class="form-group">
+            <label for="public-transport">¿Cuántos kilómetros recorres en transporte público por semana?</label>
+            <input type="range" id="public-transport" min="0" max="500" value="50" step="5">
+            <div class="slider-container">
+                <span>0 km</span>
+                <span class="slider-value" id="public-transport-value">50 km</span>
+                <span>500 km</span>
+            </div>
+        </div>
+        
+        <button id="calculate-btn">Calcular Huella de Carbono</button>
+        
+        <div id="result-container" class="result hidden">
+            <h2>Resultado</h2>
+            <p>Tu huella de carbono anual estimada es: <span id="carbon-footprint"></span> kg CO₂</p>
+            <div id="rating"></div>
+            <h3>Consejos para reducir tu huella:</h3>
+            <ul id="tips"></ul>
+        </div>
+        
+        <button id="logout-btn">Cerrar Sesión</button>
+    </div>
+
+    <script src="huellaCarbono.js"></script>
+</body>
+</html>
