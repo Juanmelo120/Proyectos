@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Registrate/Registrate.css">
+    <link rel="shortcut icon" href="/Imagenes/Captura de pantalla 2025-03-02 104037.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registrate | NetOmSe</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navegacion">
+            <a href="/inicio/inicio.html"><img src="/Imagenes/Captura de pantalla 2025-03-02 104037.png" id="img-nav"></a>
+            <h1>| N e t O m S e</h1>
+            <nav>
+                <a class="nav-opc" href="/Contacto/Contacto.html">contacto</a>
+            </nav>
+        </div>
+    </div>
+    <form action="/Registrate/Registrate.php" method="POST">
+        <fieldset>
+            <h1 id="titulo">Registrate</h1>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="usuario" placeholder="Usuario" required><br>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="contraseña1" placeholder="Contraseña" required minlength="8"><br>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="contraseña2" placeholder="Verificar Contraseña" required minlength="8"><br>
+            <button type="button" id="login"><a href="/Login/Login.html">Login</a></button>
+            <button type="submit">Registrate</button>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Terminos de uso</p>
+        <p>Privacidad</p>
+        <p>Preferencias de cookies</p>
+        <p>informacion Corporativa</p>
+    </footer>
+</body>
+</html>
